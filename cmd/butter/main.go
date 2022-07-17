@@ -23,7 +23,7 @@ func init() {
 }
 
 func init() {
-	err := godotenv.Load("../../.env")
+	err := godotenv.Load()
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
